@@ -1,0 +1,214 @@
+.share-menu
+{
+    z-index: 3;
+
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-black);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+
+    color: var(--color-white);
+
+    overflow-y: scroll;
+    max-height: 80vh;
+    max-width: 50vw;
+}
+
+.share-menu-header
+{
+    background: var(--color-black);
+    border-radius: 25px;
+}
+
+.share-menu > section
+{
+    padding: var(--padding-small);
+}
+
+.share-menu-exit
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background: transparent;
+    border: none;
+}
+
+.share-menu-exit > img
+{
+    width: 30px;
+    height: 30px;
+}
+
+.share-menu-exit:focus > img,
+.share-menu-exit:focus-visible > img,
+.share-menu-exit:hover > img
+{
+    filter: var(--filter-dark-green);
+}
+
+.share-input
+{
+    width: 60%;
+
+    background: var(--color-black);
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.share-input:focus,
+.share-input:focus-visible
+{
+    border-bottom: none;
+    outline: 2px solid var(--color-dark-green);
+}
+
+.share-button
+{
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 150px;
+
+    background: var(--color-black);
+    padding: 10px;
+
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    transition: background .5s;
+}
+
+.share-button:focus,
+.share-button:focus-visible,
+.share-button:hover
+{
+    background-color: var(--color-dark-green);
+}
+
+.embed-container
+{
+    padding: var(--padding-small);
+}
+
+.embed
+{
+    width: 100%;
+    height: 450px;
+}
+
+.share-embed-notice
+{
+    margin: var(--margin-small);
+    font-size: calc(var(--font-small) - 2px);
+}
+
+.share-embed-notice > a
+{
+    color: var(--color-dark-green);
+}
+
+.share-embed-notice > a:hover
+{
+    color: var(--color-white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .share-menu
+    {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        max-width: none;
+        max-height: none;
+    }
+
+    .share-input
+    {
+        width: 40%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+    .share-menu
+    {
+        width: 80vw;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (orientation: landscape)
+{
+    .share-menu
+    {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+}
+
+/* iphones 6/7/8 and Plus in landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+    .share-menu
+    {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+/* iphones X in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .share-menu
+    {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        max-width: none;
+        max-height: none;
+    }
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    .share-menu
+    {
+        height: 55vh;
+        width: 50vw;
+    }
+
+    .share-embed-notice
+    {
+        font-size: var(--font-large);
+    }
+
+    .share-input
+    {
+        font-size: var(--font-medium);
+    }
+
+    .share-button
+    {
+        font-size: var(--font-medium);
+        width: 250px;
+    }
+}

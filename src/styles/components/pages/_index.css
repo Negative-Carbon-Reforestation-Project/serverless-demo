@@ -1,0 +1,151 @@
+#index-container
+{
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+#index-hero
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-caption
+{
+    z-index: 1;
+    position: absolute;
+
+    opacity: .9;
+    text-transform: uppercase;
+    font-size: var(--font-large);
+
+    text-align: center;
+    width: 100%;
+}
+
+.hero-caption-text
+{
+    font-size: 60px;  
+}
+
+#hero-button
+{
+    background: none;
+
+    border: 2px solid var(--color-white);
+
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: var(--font-small);
+
+    transition: background .5s;
+}
+
+#hero-button:hover,
+#hero-button:focus
+{
+    cursor: pointer;
+    border: 2px solid var(--color-dark-green);
+    background-color: var(--color-dark-green);
+}
+
+.hero-video
+{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+
+    object-fit: cover;
+}
+
+#mission-excerpt
+{
+    background-image: url("../../../resources/images/backdrops/mission-section-backdrop.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #423E3E;
+
+    min-height: 600px;
+}
+
+.mission-excerpt-container
+{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: var(--color-dark-grey);
+    padding: 80px 40px 40px 60px;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 600px;
+}
+
+#learn-more-button
+{
+    background: none;
+
+    border: 2px solid var(--color-white);
+    margin-top: 20px;
+
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    transition: background 0.3s;
+    
+}
+
+#learn-more-button:hover
+{
+    background-color: var(--color-dark-green);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .hero-caption-text
+    {
+        font-size: 40px;
+    }
+
+}
+
+/* iphones 6/7/8 and Plus in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .hero-caption
+    {
+        font-size: var(--font-large);
+    }
+
+    .hero-caption-text
+    {
+        font-size: 40px;
+    }
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    .hero-caption-text
+    {
+        font-size: 100px;
+    }
+
+    #hero-button
+    {
+        font-size: var(--font-xlarge);
+        padding: 30px;
+    }
+
+    .mission-excerpt-container
+    {
+        max-width: 30vw;
+    }
+
+    #learn-more-button
+    {
+        font-size: var(--font-medium);
+    }
+}

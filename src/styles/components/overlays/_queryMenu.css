@@ -1,0 +1,84 @@
+.query-menu
+{
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 720px;
+    min-height: 460px;
+    
+    background-color: var(--color-black);
+
+    border-radius: 25px;
+    padding: var(--padding-small);
+
+    justify-content: center;
+}
+
+.query-menu-exit
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    background: transparent;
+    border: none;
+}
+
+.query-menu-exit:hover
+{
+    cursor: pointer;
+    filter: var(--filter-dark-green);
+}
+
+.query-menu-exit-icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+   .query-menu
+   {
+      min-width: auto;
+      border-radius: 0px;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+   }
+}
+
+/* iphones 6/7/8 and Plus in landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+    .query-menu
+    {
+        min-width: auto;
+        min-height: auto;
+        border-radius: 0px;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}
+
+/* iphones X in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .query-menu
+    {
+        min-width: auto;
+        min-height: auto;
+        border-radius: 0px;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}

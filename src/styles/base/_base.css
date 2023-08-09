@@ -1,0 +1,138 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: var(--font-roboto);
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+{
+    margin-bottom: var(--margin-small);
+}
+
+h1
+{
+    font-size: var(--font-large);
+}
+
+h2,
+label
+{
+    font-size: var(--font-medium);
+}
+
+h3,
+p,
+li
+{
+    font-size: var(--font-small);
+}
+
+
+ul
+{
+    list-style-type: disc;
+    margin-left: var(--margin-large);
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a:hover
+{
+    color: var(--color-dark-green);
+}
+
+table
+{
+    border: 1px solid var(--color-white);
+    width: 100%;
+}
+
+th
+{
+    border-bottom: 1px solid var(--color-white);
+}
+
+tr
+{
+    padding: calc(var(--margin-small) - 9rem);
+}
+
+th,
+td
+{
+    padding: calc(var(--margin-small) - 0.30rem);
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+hr
+{
+    border: none;
+    border-top: solid 1px var(--color-white);
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    h1
+    {
+        font-size: var(--font-xxlarge);
+    }
+
+    h2
+    {
+        font-size: var(--font-xlarge);
+    }
+
+    h3
+    {
+        font-size: var(--font-large);
+    }
+
+    p,
+    li
+    {
+        font-size: var(--font-large);
+    }
+}
+
+/* iphone notch fix */
+/* https://bubblin.io/blog/notch */
+@supports(padding:max(0px))
+{
+    body,
+    header,
+    footer
+    {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}

@@ -1,0 +1,16 @@
+.query-error-content
+{
+    color: var(--color-white);
+}
+
+.query-error-content a
+{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.query-error-content a:hover
+{
+    cursor: pointer;
+    color: var(--color-dark-green);
+}

@@ -1,0 +1,159 @@
+.search-bar
+{
+    z-index: 1;
+
+    display: flex;
+
+    position: fixed;
+    top: 18px;
+    left: 13px;
+
+    background-color: var(--color-black);
+    border-radius: 15px;
+    border-bottom: 1px solid var(--color-transparent-white);
+}
+
+.menu-button
+{
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.menu-button:focus-visible
+{
+    outline: 3px solid var(--color-dark-green);
+    outline-offset: -10px;
+}
+
+.menu-button:focus-visible > .menu-icon
+{
+    filter: var(--filter-dark-green);
+}
+
+.menu-icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon:hover
+{
+    filter: var(--filter-dark-green);
+}
+
+.search-input
+{
+    z-index: 2;
+    width: 600px;
+    padding: var(--padding-small);
+
+    color: var(--color-white);
+    border: none;
+    background: transparent;
+}
+
+.search-input:focus-visible
+{
+    outline: 3px solid var(--color-dark-green);
+    outline-offset: -10px;
+}
+
+.search-results
+{
+    display: none;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+
+    list-style: none;
+    color: white;
+    background-color: black;
+
+    margin: 0px;
+    padding: var(--padding-small);
+    border-radius: 10px;
+    border: none;
+}
+
+.search-results li:nth-child(1)
+{
+    margin-top: var(--margin-small);
+    border-top: 1px solid var(--color-transparent-white);
+
+}
+
+.search-results > li
+{
+    z-index: 2;
+    font-size: calc(var(--font-small) - 5px);
+    padding: var(--padding-small);
+}
+
+.search-results > li:hover
+{
+    background-color: var(--color-dark-grey);
+    cursor: pointer;
+}
+
+.search-results-active
+{
+    border-bottom: 1px solid var(--color-transparent-white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .search-bar
+    {
+        max-width: 20rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* iphones 6/7/8 and Plus in landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+    .search-bar
+    {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* iphones X in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .search-bar
+    {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    .menu-icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-input
+    {
+        font-size: var(--font-medium);
+        width: 800px;
+    }
+
+    .search-results
+    {
+        top: 50px;
+    }
+
+    .search-results > li
+    {
+        font-size: calc(var(--font-medium) - 5px);
+    }
+}

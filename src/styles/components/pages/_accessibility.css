@@ -1,0 +1,17 @@
+#accessibility-hero
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../../resources/images/backdrops/terms-section-backdrop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #423E3E;
+}
+
+.accessibility-content
+{
+    padding: 30px;
+}

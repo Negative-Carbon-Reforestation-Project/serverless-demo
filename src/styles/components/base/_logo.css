@@ -1,0 +1,79 @@
+.app-logo
+{
+    background-color: var(--color-black);
+
+    position: fixed;
+    top: 1.4rem;
+    left: 2.5rem;
+    width: 12.8rem;
+    height: 6.6rem;
+    z-index: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .app-logo
+    {
+        margin: 0 auto;
+        top: 0.6rem;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+{
+    .app-logo
+    {
+        width: 13rem;
+        height: 8rem;
+    }
+}
+
+/* iphones 6/7/8 and Plus in landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape)
+{
+    .app-logo
+    {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 12rem;
+        height: 5.6rem;
+    }
+}
+
+/* iphones X in landscape */
+@media only screen and (max-width: 900px) and (orientation: landscape)
+{
+    .app-logo
+    {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 12rem;
+        height: 5.6rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+{
+    .app-logo
+    {
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+{
+    .app-logo
+    {
+        width: 12.8rem;
+        height: 6.6rem;
+    }
+}

@@ -1,0 +1,44 @@
+.tutorial-container *
+{
+    font-family: var(--font-roboto);
+}
+.tutorial-container
+{
+    max-width: none;
+
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/*.introjs-nextbutton,*/
+/*.introjs-prevbutton*/
+.tutorial-container a[role=button].introjs-nextbutton,
+.tutorial-container a[role=button].introjs-prevbutton
+{
+    background-color: transparent;
+    text-shadow: none;
+    color: var(--color-white);
+    box-shadow: none;
+    border: 1px solid var(--color-white);
+}
+
+/*.introjs-nextbutton:hover,*/
+/*.introjs-prevbutton:hover*/
+.tutorial-container a[role=button].introjs-nextbutton:hover,
+.tutorial-container a[role=button].introjs-prevbutton:hover
+{
+    color: var(--color-white);
+    background-color: var(--color-dark-green);
+    border: 1px solid var(--color-white);
+}
+
+.tutorial-container a[role=button].introjs-skipbutton
+{
+    border: none;
+    color: var(--color-white);
+}
+
+.tutorial-container a[role=button].introjs-skipbutton:hover
+{
+    color: var(--color-dark-green);
+}

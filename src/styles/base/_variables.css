@@ -1,0 +1,59 @@
+:root
+{
+    --background-color: var(--color-black);
+    --background-color-accent: var(--color-dark-grey);
+
+    --color-black: black;
+    --color-transparent-black: rgb(0,0,0,0.8);
+    --color-white: white;
+    --color-transparent-white: rgba(255, 255, 255, 0.5);
+    --color-light-grey: #f3f3f3;
+    --color-light-green: #5fba77;
+    --color-dark-green: #127f2c;
+    --color-dark-grey: #404040;
+    --color-dark-grey-2: #2c2c2c;
+    --color-dark-pink: rgb(233, 74, 147);
+    --color-yellow: #ecb65a;
+    --color-red: #cc5e5d;
+    --color-dark-red: #b83130;
+    --color-dark-blue: #4567a3;
+    --color-blue: #5d97cc;
+    --color-light-blue: #93b4d2;
+    --filter-dark-green: brightness(0) saturate(100%) invert(38%) sepia(31%) saturate(1179%) hue-rotate(82deg) brightness(92%) contrast(95%);
+
+    --font-roboto: Roboto, sans-serif;
+    --font-small: 1.25rem;      /* 20 px */
+    --font-medium: 1.5625rem;   /* 25 px */
+    --font-large: 1.875rem;     /* 30 px */
+    --font-xlarge: 2.1875rem;   /* 35 px */
+    --font-xxlarge: 2.5rem;     /* 40 px */
+
+    --margin-small: 0.625rem;
+    --margin-large: 1.25rem;
+
+    --padding-small: 0.625rem;
+    --padding-large: 1.25rem;
+}
+
+.active
+{
+    display: block !important;
+}
+
+.active-flex
+{
+    display: flex !important;
+}
+
+.active-flex-column
+{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.cesium-credit-logoContainer,
+.cesium-credit-textContainer,
+.cesium-credit-expand-link
+{
+    display: none !important;
+}

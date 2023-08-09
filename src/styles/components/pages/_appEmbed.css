@@ -1,0 +1,16 @@
+.embed-banner
+{
+    z-index: 1;
+
+    position: fixed;
+    top: 18px;
+    left: 13px;
+
+    padding: var(--padding-small);
+    width: 200px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    text-transform: uppercase;
+    text-align: center;
+}

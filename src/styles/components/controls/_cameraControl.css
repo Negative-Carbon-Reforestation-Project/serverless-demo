@@ -1,0 +1,211 @@
+.zoom-controls
+{
+    z-index: 1;
+
+    display: none;
+
+    position: fixed;
+    bottom: 18px;
+    right: 30px;
+}
+
+.camera-control,
+.control
+{
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    font-weight: bold;
+    border-radius: 50%;
+
+    user-select: none;
+}
+
+.control
+{
+    width: 50px;
+    height: 50px;
+}
+
+.control:hover,
+.camera-control:hover
+{
+    color: var(--color-dark-green);
+}
+
+.control:focus-visible,
+.camera-control:focus-visible
+{
+    outline: solid 3px var(--color-dark-green);
+    color: var(--color-dark-green);
+}
+
+.control:hover > img,
+.camera-control:hover > img,
+.control:focus-visible > img,
+.camera-control:focus-visible > img
+{
+    filter: var(--filter-dark-green);
+}
+
+.zoom-in-control
+{
+    margin-bottom: var(--margin-small);
+}
+
+.zoom-in-control,
+.zoom-out-control
+{
+    font-size: var(--font-large);
+}
+
+
+
+/*| Camera Controls */
+.camera-controls
+{
+    z-index: 1;
+
+    display: none;
+
+    position: fixed;
+    bottom: 18px;
+    right: 40px;
+}
+
+.camera-control
+{
+    width: 40px;
+    height: 40px;
+}
+
+.expanded-camera-controls
+{
+    display: none;
+}
+
+.expand-camera-controls
+{
+    width: 70px;
+    height: 70px;
+}
+
+.expand-camera-controls > img
+{
+    width: 35px;
+    height: 35px;
+}
+
+.zoom-in-camera
+{
+    position: fixed;
+    right: 110px;
+    bottom: 60px;
+
+    font-size: var(--font-small);
+    font-weight: bold;
+
+    animation: slideFromRight .3s .2s backwards;
+}
+
+.zoom-out-camera
+{
+    position: fixed;
+    right: 120px;
+    bottom: 18px;
+
+    font-size: var(--font-medium);
+    font-weight: bold;
+
+    animation: slideFromRight .3s .2s backwards;
+}
+
+.tilt-down-control
+{
+    position: fixed;
+    right: 70px;
+    bottom: 90px;
+
+    animation: slideFromBottom .3s .2s backwards;
+}
+
+.tilt-up-control
+{
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+
+    animation: slideFromBottom .3s .2s backwards;
+}
+
+.tilt-up-control > img,
+.tilt-down-control > img
+{
+    width: 20px;
+    height: 20px;
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    .control
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .zoom-in-control,
+    .zoom-out-control
+    {
+        font-size: var(--font-xlarge);
+    }
+
+    .expand-camera-controls
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .expand-camera-controls > img
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .camera-control
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .zoom-in-camera
+    {
+        right: 135px;
+        bottom: 80px;
+    }
+
+    .zoom-out-camera
+    {
+        right: 150px;
+        bottom: 18px;
+    }
+
+    .tilt-down-control
+    {
+        right: 80px;
+        bottom: 120px;
+    }
+
+    .tilt-up-control
+    {
+        right: 10px;
+        bottom: 120px;
+    }
+
+    .tilt-up-control > img,
+    .tilt-down-control > img
+    {
+        width: 40px;
+        height: 40px;
+    }
+}

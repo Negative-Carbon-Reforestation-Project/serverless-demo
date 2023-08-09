@@ -1,0 +1,29 @@
+.query-content
+{
+    animation: fadeIn .5s;
+}
+
+.query-result-issue-link
+{
+    color: var(--color-white);
+}
+
+.coordinates,
+.reforestation-score,
+.species,
+.species-table
+{
+    margin-bottom: 0.3125rem;
+}
+
+.species-table
+{
+    border-spacing: 0
+}
+
+.species-type-header,
+.species-type
+{
+    border-right: 1px solid var(--color-white);
+}
+

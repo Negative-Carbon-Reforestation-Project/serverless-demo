@@ -1,0 +1,250 @@
+/*|| Layer Control*/
+.layer-icon
+{
+    width: 20px;
+    height: 20px;
+}
+
+.layer-control
+{
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 22px;
+    left: 33px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: solid 3px var(--color-dark-grey-2);
+
+    background-image: url("../../../resources/images/backdrops/osm-preview-contrast-195x197.png");
+    background-blend-mode: overlay;
+    background-color: transparent;
+    color: var(--color-white);
+
+    font-size: var(--font-small);
+    user-select: none;
+}
+
+.layer-control:focus,
+.layer-control:hover
+{
+    border: solid 4px var(--color-dark-grey-2);
+}
+
+/*|| Layer Menu Collapsed */
+.layer-menu-collapsed
+{
+    z-index: 1;
+
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+
+    position: fixed;
+    left: 150px;
+    bottom: 22px;
+
+    animation: fadeIn .3s backwards;
+
+    background-color: var(--color-black);
+}
+
+.layer-menu-collapsed:focus-visible
+{
+    outline: 0;
+}
+
+.layer-group
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: transparent;
+    border: none;
+    margin-top: var(--margin-small);
+    padding: var(--padding-small);
+
+    color: var(--color-white);
+    font-size: var(--font-small);
+    outline: 0;
+}
+
+.layer-active > p,
+.layer-group:focus > p,
+.layer-group:hover > p
+{
+    color: var(--color-dark-green);
+    outline: 0;
+}
+
+.layer-active > .layer-preview,
+.layer-group:focus > .layer-preview,
+.layer-group:hover > .layer-preview
+{
+    border: solid 2px var(--color-dark-green);
+}
+
+.layer-preview
+{
+    border-radius: 10px;
+
+    width: 50px;
+    height: 50px;
+}
+
+.layer-control p,
+.layer-menu-collapsed p,
+.layer-menu-expanded p
+{
+    margin-bottom: 0px;
+}
+
+.layer-menu-expanded
+{
+    z-index: 2;
+
+    display: none;
+    flex-direction: column;
+
+    position: fixed;
+    left: 33px;
+    bottom: 22px;
+    border-radius: 10px;
+    width: 500px;
+
+    padding: 10px;
+
+    color: var(--color-white);
+
+}
+
+.expanded-menu-exit
+{
+    background: transparent;
+    position: absolute;
+    right: 0;
+}
+
+.expanded-menu-exit:hover > img,
+.expanded-menu-exit:focus > img
+{
+    filter: var(--filter-dark-green);
+}
+
+.expanded-menu-exit-icon
+{
+    width: 30px;
+    height: 30px;
+}
+
+.landcover-layer-previews,
+.base-layer-previews
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landcover-layers
+{
+    border-bottom: solid 2px var(--color-white);
+}
+
+.base-layers
+{
+    margin-top: var(--margin-small);
+}
+
+.cesium-option
+{
+    margin: var(--margin-small);
+}
+
+.cesium-option > label
+{
+    margin-left: var(--margin-small);
+    font-size: var(--font-small);
+}
+
+.cesium-option-toggle
+{
+    width: 20px;
+    height: 20px;
+}
+
+.cesium-option-toggle:checked
+{
+    accent-color: var(--color-dark-green);
+}
+
+.cesium-option > label:hover,
+.cesium-option-toggle:hover
+{
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .layer-menu-expanded
+    {
+        max-width: 320px;
+        height: auto;
+    }
+
+    .landcover-layer-previews
+    {
+        flex-wrap: wrap;
+    }
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    .layer-control
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    .layer-menu-collapsed
+    {
+        left: 210px;
+
+        width: 800px;
+        height: 150px;
+    }
+
+    .layer-preview
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .layer-menu-expanded
+    {
+        width: 800px;
+    }
+
+    .expanded-menu-exit-icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cesium-option > label
+    {
+        font-size: var(--font-large);
+    }
+}

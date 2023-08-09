@@ -1,0 +1,82 @@
+#mission-hero
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../../resources/images/backdrops/mission-section-backdrop.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #423E3E;
+}
+
+.hero-header
+{
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    padding: var(--padding-small);
+    border-bottom: 2px solid var(--color-white);
+}
+
+.mission-content
+{
+    padding: 0 var(--padding-large) 0 var(--padding-large);
+}
+
+.services-content
+{
+    background-color: var(--color-light-grey);
+}
+
+.mission-content,
+.services-content
+{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-large);
+}
+
+
+.mission-content a
+{
+    color: var(--color-dark-green);
+}
+
+.mission-content a:hover
+{
+    color: var(--color-black);
+}
+
+#explore-button
+{
+    background: var(--color-dark-green);
+    margin-top: var(--margin-large);
+    align-self: center;
+    border: none;
+
+    color: var(--color-white);
+    font-size: var(--font-small);
+
+    transition: background 0.3s, transform 0.2s ease-in;
+
+}
+
+#explore-button:hover
+{
+    transform: scale(1.2);
+    background: var(--color-dark-green);
+
+    color: var(--color-white);
+}
+
+/* Large desktop devices (2500px and up) */
+@media only screen and (min-width: 2500px)
+{
+    #explore-button
+    {
+        font-size: var(--font-large);
+        padding: 30px;
+    }
+}

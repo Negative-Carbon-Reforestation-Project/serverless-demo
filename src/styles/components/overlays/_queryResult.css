@@ -1,0 +1,88 @@
+.query-result-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.query-result-coordinates
+{
+    align-items: center;
+
+    border-bottom: 3px;
+    border-color: var(--color-white);
+    margin-right: 25px;
+
+    color: var(--color-white);
+}
+
+.chart-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-container > section
+{
+    margin: var(--margin-small);
+    width: 100%;
+}
+
+/* Override the pie chart's canvas */
+.pie-container > canvas
+{
+    width: 350px !important;
+    height: 350px !important;
+    margin: 0 auto !important;
+}
+
+.chart-title
+{
+    text-align: center;
+    color: var(--color-white);
+}
+
+.chart-title-divider
+{
+    border-bottom: solid 2.5px var(--color-white);
+    margin-bottom: var(--margin-small);
+}
+
+/* Removing guage style for now till chartjs-gauge is implemented*/
+.gauge-container
+{
+    /*height: 400px;*/
+    /*width: 400px;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+/* Target the gauge chart svg, not possible to maintain */
+#gauge-chart > svg
+{
+    /*width: 20px !important;*/
+    /*height: 20px !important;*/
+}
+
+
+.gauge-data-explanation
+{
+    text-align: center;
+    color: var(--color-white);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+    .chart-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gauge-container
+    {
+        width: 100vw;
+    }
+}
